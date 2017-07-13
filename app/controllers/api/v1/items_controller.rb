@@ -67,7 +67,7 @@ class Api::V1::ItemsController < ApplicationController
     end
   end
 
-  # DELETE /controllers/1
+  # DELETE /api/v1/items/1
   def destroy
     if @api_v1_item.destroy
       render json: {

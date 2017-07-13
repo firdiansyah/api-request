@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
         put "items/restore", to: "items#restore"
         get "items/findByName/:name", to: "items#getByName"
+        get "items/delete/:id", to: "items#destroy"
 
         resources :items
     end
